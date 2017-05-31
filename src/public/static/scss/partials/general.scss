@@ -1,0 +1,7 @@
+
+.hover-opacity {
+  @extend .transition-slow;
+  &:hover {
+    opacity: 0.8;
+  }
+}

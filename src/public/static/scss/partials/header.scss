@@ -1,0 +1,111 @@
+.brand-logo-wrapper{
+  &:hover {
+    .mainline-logo, .mainline-logo-text {
+      /*@extend .transition-slow;*/
+      /*opacity: 0.8;*/
+      background-position: -15px -65px;
+
+      @include breakpoint(map-get($breakpoints, 'mobile-only')){
+        background-position: -11px -50px;
+      }
+    }
+
+
+  }
+}
+
+.brand-logo {
+  background-image: url("../images/husqui-logo.svg");
+  background-repeat: no-repeat;
+  height: 50px;
+  width:230px;
+  background-size: 235px auto;
+  background-position: 0 0;
+  cursor: pointer;
+  display: inline-block;
+
+  /*@extend .transition-slow;*/
+
+  @include breakpoint(map-get($breakpoints, 'mobile-only')){
+    height: 35px;
+    width: 165px;
+    background-size: 180px auto;
+    background-position: -11px 0;
+  }
+
+}
+
+.mainline-logo-text{
+  font-size:18px;
+  color: map-get($colors, 'copy-primary-medium');
+  @extend .transition-slow;
+  @include breakpoint(map-get($breakpoints, 'mobile-only')){
+    font-size:14px;
+  }
+
+}
+
+.tel-link {
+  &:hover, &:focus {
+    color: map-get($colors, 'brand-dark');
+    text-decoration: none;
+  }
+}
+
+.cart-items-val{
+  color: white;
+  position: relative;
+  top: -5px;
+  left: -5px;
+}
+
+.nav-links-wrapper {
+  display: inline-block;
+
+
+  @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')){
+    text-align: left;
+    margin-top:$helper-standard;
+  }
+
+  .nav-links {
+    list-style: none;
+    text-align: right;
+
+    /*@include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')){
+      text-align: left;
+    }*/
+
+    li {
+      display: inline;
+      margin-left: $helper-thick;
+
+
+      @include breakpoint(map-get($breakpoints, 'mobile-and-small-tablet-only')){
+        float:none;
+
+        &:first-child{
+          margin-left:0;
+        }
+      }
+
+      @include breakpoint(map-get($breakpoints, 'mobile-only')){
+          margin-left:$helper-standard;
+      }
+
+      a{
+        color:map-get($colors, 'copy-primary-medium');
+        @extend .transition-slow;
+        &:hover, &:focus {
+          color:map-get($colors, 'brand-dark');
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+

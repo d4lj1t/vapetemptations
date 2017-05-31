@@ -1,0 +1,641 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- So that mobile will display zoomed in -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- enable media queries for windows phone 8 -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- disable auto telephone linking in iOS -->
+    <title>{{title}}</title>
+
+    <style type="text/css">
+
+        /*responsive*/
+        body {
+            margin: 0;
+            padding: 0;
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;;
+            line-height:18px;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        table td {
+            border-collapse: collapse;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        .ExternalClass,
+        .ExternalClass p,
+        .ExternalClass span,
+        .ExternalClass font,
+        .ExternalClass td,
+        .ExternalClass div {
+            line-height: 100%;
+        }
+
+        .ReadMsgBody {
+            width: 100%;
+            background-color: #ebebeb;
+        }
+
+        table {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        .yshortcuts a {
+            border-bottom: none !important;
+        }
+
+        @media screen and (max-width: 599px) {
+            .force-row,
+            .container {
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+        }
+
+        @media screen and (max-width: 400px) {
+            .container-padding {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+            }
+        }
+
+        .ios-footer a {
+            color: #aaaaaa !important;
+            text-decoration: underline;
+        }
+
+        /*styles*/
+
+        .header,
+        .title,
+        .subtitle,
+        .footer-text {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            padding-bottom: 10px;
+
+        }
+
+        .footer-text {
+            font-size: 12px;
+            line-height: 16px;
+            color: #aaaaaa;
+        }
+
+        .footer-text a {
+            color: #aaaaaa;
+        }
+
+        .container {
+            width: 600px;
+            max-width: 600px;
+        }
+
+        .container-padding {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .content {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: #ffffff;
+        }
+
+        code {
+            background-color: #eee;
+            padding: 0 4px;
+            font-family: Menlo, Courier, monospace;
+            font-size: 13px;
+        }
+
+        hr {
+            border: 0;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .hr {
+            height: 1px;
+            border-bottom: 1px solid #cccccc;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #374550;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            font-weight: 600;
+            color: #2469A0;
+        }
+
+        .subtitle span {
+            font-weight: 400;
+            color: #999999;
+        }
+
+        .body-text {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: left;
+            color: #333333;
+        }
+
+        /*styles*/
+
+        /*helpers*/
+
+        .no-marg {
+            margin: 0 !important;
+        }
+
+        /* paddings */
+
+        .no-pad {
+            padding: 0 !important;
+        }
+
+        .pad {
+            padding: 10px;
+        }
+
+        .pad-side {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .pad-left {
+            padding-left: 10px;
+        }
+
+        .pad-right {
+            padding-right: 10px;
+        }
+
+        .pad-top {
+            padding-top: 10px;
+        }
+
+        .pad-bottom {
+            padding-bottom: 10px;
+        }
+
+        .pad-top-bottom {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        .thick-pad {
+            padding: 20px;
+        }
+
+        .thick-pad-side {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .thick-pad-left {
+            padding-left: 20px;
+        }
+
+        .thick-pad-right {
+            padding-right: 20px;
+        }
+
+        .thick-pad-top {
+            padding-top: 20px;
+        }
+
+        .thick-pad-bottom {
+            padding-bottom: 20px;
+        }
+
+        .thick-pad-top-bottom {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .thin-pad {
+            padding: 5px;
+        }
+
+        .thin-pad-side {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .thin-pad-left {
+            padding-left: 5px;
+        }
+
+        .thin-pad-right {
+            padding-right: 5px;
+        }
+
+        .thin-pad-top {
+            padding-top: 5px;
+        }
+
+        .thin-pad-bottom {
+            padding-bottom: 5px;
+        }
+
+        .thin-pad-top-bottom {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .extra-thin-pad {
+            padding: 3.33px;
+        }
+
+        .extra-thin-pad-side {
+            padding-left: 2.5px;
+            padding-right: 2.5px;
+        }
+
+        .extra-thin-pad-left {
+            padding-left: 2.5px;
+        }
+
+        .extra-thin-pad-right {
+            padding-right: 2.5px;
+        }
+
+        .extra-thin-pad-top {
+            padding-top: 2.5px;
+        }
+
+        .extra-thin-pad-bottom {
+            padding-bottom: 2.5px;
+        }
+
+        .extra-thin-pad-top-bottom {
+            padding-top: 2.5px;
+            padding-bottom: 2.5px;
+        }
+
+        .extra-thick-pad {
+            padding: 30px;
+        }
+
+        .extra-thick-pad-side {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .extra-thick-pad-left {
+            padding-left: 30px;
+        }
+
+        .extra-thick-pad-right {
+            padding-right: 30px;
+        }
+
+        .extra-thick-pad-top {
+            padding-top: 30px;
+        }
+
+        .extra-thick-pad-bottom {
+            padding-bottom: 30px;
+        }
+
+        .extra-thick-pad-top-bottom {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+
+        /* borders */
+        .border-bottom {
+            border-bottom: 1px solid #ff6600;
+        }
+
+        .border-top {
+            border-top: 1px solid #ccc;
+        }
+
+        .border-top-bottom {
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .border-side {
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+        }
+
+        .border-thick-bottom-pink {
+            border-bottom: 2px solid #E51D9B;
+        }
+
+        .border-thick-top-pink {
+            border-top: 2px solid #E51D9B;
+        }
+
+        /* fonts */
+        .font-xs {
+            font-size: 10px;
+        }
+
+        .font-xs-sm{
+            font-size: 12px;
+        }
+
+        .font-sm {
+            font-size: 14px;
+        }
+
+        .font-12{
+            font-size:12px;
+        }
+
+        .font-15{
+            font-size:15px;
+        }
+
+        .font-md {
+            font-size: 17px;
+        }
+
+        .font-lg {
+            font-size: 19px;
+        }
+
+        .font-weight-bold{
+            font-weight: bold;
+        }
+
+        /* line-height */
+        .line-height-xs {
+            line-height: 15px;
+        }
+
+        .line-height-sm {
+            line-height: 19px;
+        }
+
+        .line-height-md {
+            line-height: 23px;
+        }
+
+        .line-height-lg {
+            line-heighht: 25px;
+        }
+
+        /* text align */
+        .text-align-left {
+            text-align: left;
+        }
+
+        .text-align-right {
+            text-align: right;
+        }
+
+        .text-align-center {
+            text-align: center;
+        }
+
+        .text-underline{
+            text-decoration: underline;
+        }
+
+        .text-decoration-none{
+            text-decoration: none!important;
+            text-decoration: none;
+        }
+
+        /* general */
+        .full-width {
+            width: 100%;
+        }
+
+        .pull-left {
+            float: left;
+        }
+
+        .pull-right {
+            float: right;
+        }
+
+
+        .display-block {
+            display: block;
+        }
+
+        /* backgrounds */
+
+        .background-grey {
+            background-color: #efefef;
+        }
+
+        .background-grey-medium {
+            background-color: #e0e0e0;
+        }
+
+
+
+        .background-grey-dark {
+            background-color: #818383;
+        }
+
+
+        .background-white {
+            background-color: #ffffff;
+        }
+
+        .background-black {
+            background-color: #000000;
+        }
+
+        .background-green{
+            background-color: #9D9B7F;
+        }
+
+
+
+        /* colors */
+        .color-grey-medium {
+            color: #818383;
+        }
+
+        .color-grey-light {
+            color: #ebecec;
+        }
+
+        .color-grey-dark {
+            color: #726260;
+        }
+
+        .color-black{
+            color:#000000;
+        }
+
+        .color-white {
+            color: #fff;
+        }
+
+        .color-orange {
+            color: #ff6600;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit;
+            cursor: auto;
+        }
+
+        .tel-link {
+            text-align: right;
+            /*height: 30px;*/
+            padding-top:10px;
+
+        }
+
+        .secondary-nav td{
+            padding-right:21px;
+        }
+
+        .secondary-nav td.polcore{
+            width: 38px;
+        }
+
+        .secondary-nav td.wood{
+            width: 28px;
+        }
+
+        .secondary-nav td.mountboard{
+            width: 58px;
+        }
+        .secondary-nav td.materials{
+            width: 45px;
+        }
+        .secondary-nav td.equipment{
+            width: 52px;
+        }
+
+        .secondary-nav td.blade-sharpening{
+            width: 92px;
+        }
+        .secondary-nav td.gallery{
+            width: 36px;
+        }
+
+        .secondary-nav td.sale{
+            width: 22px;
+        }
+
+        .secondary-nav td.new{
+            width: 21px;
+            padding-right:0;
+        }
+
+        @media screen and (max-width: 599px) {
+            .tel-link {
+               /* text-align: left !important;
+                height: auto !important;*/
+                padding-top:0;
+                font-size: 12px;;
+
+            }
+
+            .secondary-nav td.materials, .secondary-nav td.equipment, .secondary-nav td.blade-sharpening, .secondary-nav td.gallery, .secondary-nav td.sale, .secondary-nav td.new{
+                display:none!important;
+            }
+
+            .secondary-nav td.polcore{
+                width: 33.3% !important;
+                padding-right:0!important;
+                font-size: 14px !important;
+            }
+
+            .secondary-nav td.wood{
+                width: 33.3% !important;
+                padding-right:0!important;
+                text-align: center;
+                font-size: 14px !important;
+            }
+
+            .secondary-nav td.mountboard{
+                width: 33.3% !important;
+                padding-right:0!important;
+                text-align: right;
+                font-size: 14px !important;
+            }
+
+        /*    img{
+                width: 100% !important;
+            }*/
+
+        }
+        @media screen and (max-width: 1200px) {
+
+            .appleLink a {
+                color: #000000 !important;
+                text-decoration: none !important;
+            }
+        }
+
+
+
+    </style>
+
+
+</head>
+
+<body style="margin:0; padding:0;" bgcolor="#F0F0F0" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!--[if mso]>
+<style type="text/css">
+    body, table, td {font-family: Arial, Helvetica, sans-serif !important;}
+</style>
+<![endif]-->
+
+{% body %}
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,47 @@
+/*
+	Main browser styles
+	----------------------------------- */
+// Modules via npm + eyeglass
+@import 'npm/normalize-sass/normalize';
+@import 'npm/breakpoint-sass/stylesheets/breakpoint';
+
+//Bootstrap
+@import 'bootstrap-lib/bootstrap';
+
+//plugins
+//jssor-slider
+
+
+//font-awesome
+@import 'modules/font-awesome/scss/font-awesome';
+
+// Mixins etc
+@import 'modules/fonts';
+
+// Base partials
+@import 'base/variables';
+/*@import 'base/grid';*/
+@import 'base/fonts';
+@import 'base/helpers';
+@import 'base/type';
+@import 'base/animations';
+
+
+
+
+// Partials
+
+@import 'partials/general';
+@import 'partials/icons';
+@import 'partials/side-menu';
+@import 'partials/header';
+@import 'partials/button';
+
+
+//plugins
+
+
+
+
+
+

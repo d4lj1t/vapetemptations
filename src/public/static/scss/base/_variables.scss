@@ -1,0 +1,85 @@
+/*
+	Variables
+	----------------------------------- */
+
+$colors: (
+  //Colors
+        'brand-dark':black,
+        'brand-light':black,
+        'copy-primary-dark':#726260,
+        'copy-primary-medium':#818383,
+        'copy-primary-light':#ebecec,
+        'brand-yellow': #f8a829,
+        'brand-purple':#962045,
+        'brand-green':#b7a000,
+
+);
+
+$properties: (
+        'input-radius': 6px,
+        'button-radius': 6px,
+);
+
+$breakpoints: (
+  // Mobile first
+        'xs': 480px,
+        'sm': 768px,
+        'md': 992px,
+        'lg': 1200px,
+
+  // Specific ranges for mobile
+        'mobile-only': 'max-width' 767px,
+       /* 'mobile-only-portrait': (max-width 767px) (orientation portrait),
+        'mobile-only-landscape': (max-width 767px) (orientation landscape),*/
+
+  // Specific ranges for mobile + tablet
+        'small-mobile': (max-width 479px),
+        'mobile-and-small-tablet-only': 'max-width' 767px,
+        'mobile-and-tablet-only': 'max-width' 991px,
+        'mobile-and-large-tablet-only': 'max-width' 1199px,
+        'tablet-only': (min-width 768px) (max-width 1199px),
+
+        'small-tablet-only': (min-width 768px) (max-width 992px),
+        'large-tablet-only': (min-width 992px) (max-width 1199px),
+        'large-mobile': (min-width 480px) (max-width 767px),
+
+        //specific range for small tablet up
+        'large-tablet-up': 'min-width' 992px,
+        'small-tablet-up':'min-width' 768px,
+        'mobile-up': 'min-width' 480px,
+        'desktop-up': 'min-width' 1199px,
+
+
+  // Retina images
+        'retina': min-resolution 1.5dppx
+);
+
+// Tell Breakpoint to use ems
+@include breakpoint-set('to ems', true);
+
+/*in house variables*/
+
+// Helpers: set standard padding and margin values, thick and thin
+$helper-standard: 10px;
+$helper-medium:$helper-standard/2*3;
+$helper-thick: $helper-standard*2;
+$helper-thin: $helper-standard/2;
+$helper-extra-thin: $helper-standard/3;
+$helper-extra-thick: $helper-standard*3;
+
+/*$helper: (
+        'standard': $helper-standard,
+        'thick': $helper-standard*2,
+        'thin': $helper-standard/2,
+        'extra-thin': $helper-standard/3,
+        'extra-thick': $helper-standard*3
+);*/
+
+//font-weight
+
+$font-weight: (
+        'strong': 600
+);
+
+
+
