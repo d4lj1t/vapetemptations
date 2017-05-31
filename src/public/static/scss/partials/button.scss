@@ -43,12 +43,12 @@
 }
 
 .btn-brand-default {
-  background-color: map-get($colors, 'copy-primary-medium');
+  background-color:black;
   @extend .transition-slow;
 
   &:hover, &:focus {
-    opacity: 0.8;
-    color:map-get($colors,'brand-light');
+    /*opacity: 0.8;*/
+    color:map-get($colors,'brand-green');
   }
 }
 
@@ -69,7 +69,7 @@
   @extend .transition-slow;
   &:hover, &:focus {
     opacity: 0.8;
-    color:map-get($colors,'brand-light');
+    color:map-get($colors,'brand-green');
   }
 }
 

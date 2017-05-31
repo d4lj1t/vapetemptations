@@ -1,0 +1,7 @@
+.intro-poster{
+  width:45%;
+
+  @include breakpoint(map-get($breakpoints, 'mobile-only')) {
+    width:100%;
+  }
+}

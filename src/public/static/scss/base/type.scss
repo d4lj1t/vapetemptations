@@ -1,9 +1,9 @@
 a {
-  color: map-get($colors, 'copy-primary-dark');
+  color: black;
 /*  @extend .transition-slow;*/
 
   &:hover, &:focus, &:active {
-    color: map-get($colors, 'brand-light');
+    color: map-get($colors, 'brand-green');
     text-decoration: none;
   }
 }

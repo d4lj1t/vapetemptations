@@ -1,5 +1,5 @@
 .side-menu {
-  background-color: map-get($colors, 'copy-primary-medium');
+  background-color: map-get($colors, 'brand-black');;
   position: absolute;
   top: 0;
   right: 0;
@@ -27,11 +27,11 @@
       }
 
       &:hover {
-        color: map-get($colors, 'brand-light');
-        border-bottom: 1px solid map-get($colors, 'brand-light');
+        color: map-get($colors, 'brand-green');
+        border-bottom: 1px solid map-get($colors, 'brand-green');
 
         > a {
-          color: map-get($colors, 'brand-light');
+          color: map-get($colors, 'brand-green');
         }
       }
 
@@ -44,13 +44,13 @@
     li.secondary-nav-item {
 
       &:hover {
-        color: map-get($colors, 'brand-light');
+        color: map-get($colors, 'brand-green');
         border-bottom: none;
       }
 
       > a {
         display: block;
-        color: map-get($colors, 'brand-light');
+        color: map-get($colors, 'brand-green');
       }
     }
   }
@@ -92,7 +92,7 @@
         /*@extend .transition-slow;*/
 
         &:hover {
-          border-bottom: 1px solid map-get($colors, 'brand-light');
+          border-bottom: 1px solid map-get($colors, 'brand-green');
         }
       }
     }
